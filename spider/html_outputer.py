@@ -1,9 +1,4 @@
 # -*- coding: UTF-8 -*-
-'''
-Created on 2016-3-22
-
-@author: CaoPeng
-'''
 import sys
 reload(sys)
 sys.setdefaultencoding("utf-8")

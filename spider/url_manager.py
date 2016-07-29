@@ -1,12 +1,4 @@
 # -*- coding: UTF-8 -*-
-'''
-Created on 2016-3-22
-
-@author: CaoPeng
-'''
-
-'''
-'''
 class UrlManager(object):
     def __init__(self):
         self.new_urls = set()

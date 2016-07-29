@@ -1,9 +1,4 @@
 # -*- coding: UTF-8 -*-
-'''
-Created on 2016-3-22
-
-@author: CaoPeng
-'''
 from bs4 import BeautifulSoup
 import re
 from urlparse import urljoin
