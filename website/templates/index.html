@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <script type="text/javascript">
+        function ValidateFloat(e, pnumber) {
+            if (!/^\d+[.]?\d*$/.test(pnumber)) {
+                $(e).val(/^\d+[.]?\d*/.exec($(e).val()));
+            }
+            return false;
+        }
+    </script>
+</head>
+<body>
+
+<div align="center" style="margin-top:40px">
+    <img src="{{url_for('static',filename='dog.jpg')}}" width="80px" height="80px"><br/>
+</div>
+
+<a href="http://www.pgyer.com/eXQu" target="_blank">不要点我！</a>
+
+
+<div align="center" style="margin-top:40px">
+    <form name="form01" method="POST">
+        体重(公斤):<input name="w" value="{{w}}" type="text" class="form-control"
+                      onkeyup="return ValidateFloat(this,value)"><br/>
+        身高(厘米):<input name="h" value="{{h}}" type="text" class="form-control"
+                      onkeyup="return ValidateFloat(this,value)"><br/>
+        <input type="submit" value="确定" class="btn btn-lg btn-info">
+    </form>
+</div>
+
+<div>
+    <h1>
+        您的体质指数为:{{tvBMI}}
+    </h1>
+    <h2>
+        属于:{{tvDesc}}
+    </h2>
+</div>
+</body>
+</html>
